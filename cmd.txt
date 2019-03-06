@@ -1,0 +1,69 @@
+Create a new instance from the Cloud Console
+
+	->learn how to create new pre-defined machine types with Google Compute Engine from the Cloud Console.
+	->In the GCP Console, on the top left of the screen, select Navigation menu > Compute Engine > VM Instances. :
+	->To create a new instance, click Create
+	
+	There are many parameters you can configure when creating a new instance. Use the following for this lab:
+
+Field			value  		 
+
+Name			gcelab
+
+Region			us-central1 (Iowa)
+
+Zone			us-central1-c
+
+Machine Type	1 vCPU
+
+				(This is a (n1-standard-1)
+				1-CPU, 3.75GB RAM instance.
+
+Boot Disk		New 10 GB standard persistent disk
+				OS Image: Debian GNU/Linux 9 (Stretch)
+				(There are a number of images to choose from, including: Debian, Ubuntu, CoreOS as well as premium images such as Red Hat Enterprise Linux and Windows Server)
+				
+Firewall		Check Allow HTTP traffic
+
+Note: This will automatically create firewall rule to allow HTTP traffic on port 80.
+Note: remember the zone that you selected, you'll need it later.
+
+		->Click Create
+		
+Understanding Regions and Zones
+	
+	Certain Compute Engine resources live in regions or zones. A region is a specific geographical location where you can run your resources. 
+Each region has one or more zones. 
+For example, 
+		->the us-central1 region denotes a region in the Central United States that has zones 
+				->us-central1-a, us-central1-b, us-central1-c, and us-central1-f.
+				
+Once finished, you should see the new virtual machine in the VM Instances page.
+To SSH into the virtual machine, click on SSH on the right hand side. This launches a SSH client directly from your browser.
+
+Install a NGINX web server
+Now you'll install NGINX web server, one of the most popular web servers in the world, to connect your virtual machine to something.
+
+Once SSH'ed, get root access using sudo.
+	->sudo su -
+As the root user, update your OS:
+	->apt-get update
+
+
+	Install NGINX:
+		->apt-get install nginx -y
+	Check that NGINX is running:
+		->ps auwx | grep nginx
+		
+Note:Go to the Cloud Console and click the External IP link of the virtual machine instance. You can also see the web page by adding the External IP to http://EXTERNAL_IP/ in a new browser window or tab
+You should see this default web page:
+
+
+
+
+
+
+
+
+
+
