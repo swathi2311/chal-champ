@@ -1,3 +1,18 @@
+
+To create a virtual machine using a GCP[googlecloudplatform]Console
+
+after all the setup:
+	1.In GCP console, on the top right toolbar, click the Open Cloud Shell button.
+	2.In the dialog box that opens, click START CLOUD SHELL
+	
+	gcloud is the command-line tool for Google Cloud Platform. It comes pre-installed on Cloud Shell.
+	
+			->You can list the active account name with this command:
+								1.gcloud auth list
+			->You can list the project ID with this command:
+								2.gcloud config list project
+    
+
 Create a new instance from the Cloud Console
 
 	->learn how to create new pre-defined machine types with Google Compute Engine from the Cloud Console.
