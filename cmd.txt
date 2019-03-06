@@ -32,7 +32,8 @@ Note: remember the zone that you selected, you'll need it later.
 		
 Understanding Regions and Zones
 	
-	Certain Compute Engine resources live in regions or zones. A region is a specific geographical location where you can run your resources. 
+	Certain Compute Engine resources live in regions or zones. 
+	A region is a specific geographical location where you can run your resources. 
 Each region has one or more zones. 
 For example, 
 		->the us-central1 region denotes a region in the Central United States that has zones 
@@ -55,8 +56,10 @@ As the root user, update your OS:
 	Check that NGINX is running:
 		->ps auwx | grep nginx
 		
-Note:Go to the Cloud Console and click the External IP link of the virtual machine instance. You can also see the web page by adding the External IP to http://EXTERNAL_IP/ in a new browser window or tab
-You should see this default web page:
+Note:Go to the Cloud Console and click the External IP link of the virtual machine instance. 
+	You can also see the web page by adding the External IP to http://EXTERNAL_IP/ in a new browser window or tab
+
+	You should see this default web page:
 
 
 
