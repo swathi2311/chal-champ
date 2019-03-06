@@ -1,1 +1,1 @@
-# chal-champ
+create a new instance from the cloud console
