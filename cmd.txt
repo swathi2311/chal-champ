@@ -74,7 +74,7 @@ As the root user, update your OS:
 Note:Go to the Cloud Console and click the External IP link of the virtual machine instance. 
 	You can also see the web page by adding the External IP to http://EXTERNAL_IP/ in a new browser window or tab
 
-	You should see this default web page:
+	You should see the default web page:
 
 
 
