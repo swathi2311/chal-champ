@@ -1,6 +1,6 @@
 //program to print pattern
 
-#inlcude<stdio.h>
+#include<stdio.h>
 #include<conio.h>
 void main()
 {
