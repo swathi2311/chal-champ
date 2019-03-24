@@ -3,6 +3,9 @@
   <title>form</title>
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"><!--link to import lobster font from google-->
   <style>
+    #cat-photo-form{
+      background-color:green;
+    }
     .silver-background{
       background-color:silver;
     }
@@ -44,7 +47,7 @@
     </ol>
   </div>
   
-  <form action="/submit-cat-photo">
+  <form id="cat-photo-form" action="/submit-cat-photo">
     <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
     <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
     <label><input type="checkbox" name="personality" checked> Loving</label>
